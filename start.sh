@@ -79,7 +79,7 @@ perform_operation() {
                 continue
             fi
 
-            backup_dir="TapperBackup/$bot"
+            backup_dir="~/TapperBackup/$bot"
             mkdir -p "$backup_dir"
 
             if [ -d "$bot/sessions" ]; then
