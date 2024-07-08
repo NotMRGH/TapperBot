@@ -87,8 +87,6 @@ perform_operation() {
             fi
             if [ -f "$bot/.env" ]; then
                 cp "$bot/.env" "$backup_dir"
-            else
-                cp .env-example .env
             fi
 
             rm -rf "$bot"
@@ -98,6 +96,7 @@ perform_operation() {
             python3.10 -m venv venv
             source venv/bin/activate
             python3.10 -m pip install -r requirements.txt
+            cp .env-example .env
 
             if [ -d "$backup_dir/sessions" ]; then
                 cp -r "$backup_dir/sessions" .
