@@ -98,8 +98,13 @@ perform_operation() {
             python3.10 -m pip install -r requirements.txt
             cp .env-example .env
 
-            cp -r "$backup_dir/sessions" .
-            cp "$backup_dir/.env" .
+            if [ -d "$backup_dir/sessions" ]; then
+                cp -r "$backup_dir/sessions" .
+            fi
+
+            if [ -f "$backup_dir/.env" ]; then
+                cp "$backup_dir/.env" .
+            fi
 
             cd - >/dev/null || exit 1
 
@@ -127,6 +132,13 @@ clear
 
 if [ "$EUID" -ne 0 ]; then
     echo -e "${red}This script requires root access. please run as root.${rest}"
+    exit 1
+fi
+
+read -p "Are you sure that you enter this command in the root directory? (y/N): " root_choice
+root_choice=${root_choice,,}
+
+if [ "$root_choice" = "n" ]; then
     exit 1
 fi
 
