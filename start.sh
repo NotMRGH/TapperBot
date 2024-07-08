@@ -98,10 +98,11 @@ perform_operation() {
             python3.10 -m pip install -r requirements.txt
             cp .env-example .env
 
+            cd - >/dev/null || exit 1
+
             cp -r "$backup_dir/sessions" .
             cp "$backup_dir/.env" .
 
-            cd - >/dev/null || exit 1
         done
         echo -e "${green}The installation/update was successful${rest}"
         ;;
