@@ -79,7 +79,7 @@ perform_operation() {
                 continue
             fi
 
-            backup_dir="TapperBackup/$bot"
+            backup_dir="/root/TapperBackup/$bot"
             mkdir -p "$backup_dir"
 
             if [ -d "$bot/sessions" ]; then
@@ -98,10 +98,10 @@ perform_operation() {
             python3.10 -m pip install -r requirements.txt
             cp .env-example .env
 
-            cd - >/dev/null || exit 1
-
             cp -r "$backup_dir/sessions" .
             cp "$backup_dir/.env" .
+
+            cd - >/dev/null || exit 1
 
         done
         echo -e "${green}The installation/update was successful${rest}"
@@ -124,6 +124,12 @@ perform_operation() {
 
 # Main script
 clear
+
+if [ "$EUID" -ne 0 ]; then
+    echo -e "${red}This script requires root access. please run as root.${rest}"
+    exit 1
+fi
+
 echo "
  /\$\$\$\$\$\$\$\$                                                      /\$\$\$\$\$\$\$              /\$\$    
 |__  \$\$__/                                                     | \$\$__  \$\$            | \$\$    
