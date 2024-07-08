@@ -87,6 +87,8 @@ perform_operation() {
             fi
             if [ -f "$bot/.env" ]; then
                 cp "$bot/.env" "$backup_dir"
+            else
+                cp .env-example .env
             fi
 
             rm -rf "$bot"
