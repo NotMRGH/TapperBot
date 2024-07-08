@@ -98,12 +98,8 @@ perform_operation() {
             python3.10 -m pip install -r requirements.txt
             cp .env-example .env
 
-            if [ -d "$backup_dir/sessions" ]; then
-                cp -r "$backup_dir/sessions" .
-            fi
-            if [ -f "$backup_dir/.env" ]; then
-                cp "$backup_dir/.env" .
-            fi
+            cp -r "$backup_dir/sessions" .
+            cp "$backup_dir/.env" .
 
             cd - >/dev/null || exit 1
         done
