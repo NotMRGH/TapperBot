@@ -46,6 +46,11 @@ declare -A repos=(
     ["YesCoinBot"]="https://github.com/shamhi/YesCoinBot.git"
 )
 
+limits=(
+    "CEX.IO-bot"
+    "MemeFiBot"
+)
+
 # Function to handle common operations
 perform_operation() {
     action_choice=$1
@@ -116,6 +121,27 @@ perform_operation() {
         rm -rf "TapperBackup"
         echo -e "${green}Backup deleted successfully${rest}"
         ;;
+    5)
+        echo -e "${red}Combining...${rest}"
+        src_bot="HamsterKombatBot"
+        if [ -d "$src_bot/sessions" ]; then
+            for bot in "${!bots[@]}"; do
+                if [[ " ${limits[@]} " =~ " ${bot} " ]]; then
+                    read -p "Bot ${bot} has a limit for sessions. Do you want to skip this bot? (y/N): " skip_choice
+                    skip_choice=${skip_choice,,}
+
+                    if [ "$skip_choice" = "y" ]; then
+                        echo -e "${purple}Skipping ${bot}.${rest}"
+                        continue
+                    fi
+                fi
+                cp -r "$src_bot/sessions" "$bot"
+            done
+        else
+            echo -e "${red}No sessions found in ${src_bot}${rest}"
+        fi
+        echo -e "${green}Combine successfully${rest}"
+        ;;
     0)
         echo -e "${purple}Exiting...${rest}"
         exit 0
@@ -164,6 +190,7 @@ echo -e "${green}1) Start${rest}"
 echo -e "${red}2) Stop${rest}"
 echo -e "${green}3) Install/Update${rest}"
 echo -e "${red}4) Remove backup${rest}"
+echo -e "${green}5) Combine all sessions together${rest}"
 echo -e "${red}0) Exit${rest}"
 read -p "Please choose: " action_choice
 
