@@ -135,19 +135,54 @@ perform_operation() {
                         continue
                     fi
                 fi
-                cp -r "$src_bot/sessions" "$bot"
+                cp -r "$src_bot/sessions/"* "$bot/sessions/"
             done
         else
             echo -e "${red}No sessions found in ${src_bot}${rest}"
         fi
         echo -e "${green}Combine successfully${rest}"
         ;;
+    6)
+        echo -e "${red}Creating backups...${rest}"
+        for bot in "${!bots[@]}"; do
+            backup_dir="/root/TapperBackup/$bot"
+            mkdir -p "$backup_dir"
+            cd "$bot" || exit 1
+
+            if [ -d "sessions" ]; then
+                cp -r "sessions" "$backup_dir"
+            fi
+            if [ -f ".env" ]; then
+                cp ".env" "$backup_dir"
+            fi
+
+            cd - >/dev/null || exit 1
+        done
+        echo -e "${green}Backup created successfully${rest}"
+        ;;
+    7)
+        echo -e "${red}Pasting backups...${rest}"
+        for bot in "${!bots[@]}"; do
+            backup_dir="/root/TapperBackup/$bot"
+            cd "$bot" || exit 1
+
+            if [ -d "$backup_dir/sessions" ]; then
+                cp -r "$backup_dir/sessions/"* "sessions/"
+            fi
+
+            if [ -f "$backup_dir/.env" ]; then
+                cp "$backup_dir/.env" .
+            fi
+            cd - >/dev/null || exit 1
+        done
+        echo -e "${green}Backup pasted successfully${rest}"
+        ;;
     0)
         echo -e "${purple}Exiting...${rest}"
         exit 0
         ;;
     *)
-        echo -e "${red}Invalid choice. Please enter '1', '2', '3', '4' or '0'.${rest}"
+        echo -e "${red}Invalid choice. Please enter '1', '2', '3', '4', '5', '6', '7' or '0'.${rest}"
         exit 1
         ;;
     esac
@@ -191,6 +226,8 @@ echo -e "${red}2) Stop${rest}"
 echo -e "${green}3) Install/Update${rest}"
 echo -e "${red}4) Remove backup${rest}"
 echo -e "${green}5) Combine all sessions together${rest}"
+echo -e "${green}6) Create backup${rest}"
+echo -e "${green}7) Paste backup${rest}"
 echo -e "${red}0) Exit${rest}"
 read -p "Please choose: " action_choice
 
