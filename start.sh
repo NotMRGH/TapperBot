@@ -27,6 +27,7 @@ declare -A bots=(
     ["telegram-blum-auto"]="1"
     ["WormSlapBot"]="2"
     ["YesCoinBot"]="2"
+    ["HEXACOREbot"]="1"
 )
 
 declare -A repos=(
@@ -44,6 +45,7 @@ declare -A repos=(
     ["telegram-blum-auto"]="https://gitlab.com/D4rkKaizen/telegram-blum-auto.git"
     ["WormSlapBot"]="https://github.com/shamhi/WormSlapBot.git"
     ["YesCoinBot"]="https://github.com/shamhi/YesCoinBot.git"
+    ["HEXACOREbot"]="https://github.com/HiddenCodeDevs/HEXACOREbot.git"
 )
 
 limits=(
