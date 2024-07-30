@@ -24,10 +24,11 @@ declare -A bots=(
     ["PocketFiBot"]="2"
     ["MMProBumpBot"]="2"
     ["ClaytonBOT"]="2"
-    ["BlumBot"]="2"
+    ["BlumTelegramBot"]="1"
     ["WormSlapBot"]="2"
     ["YesCoinBot"]="2"
     ["HEXACOREbot"]="1"
+    ["DogsHouseRefBot"]="1"
 )
 
 declare -A repos=(
@@ -42,10 +43,11 @@ declare -A repos=(
     ["PocketFiBot"]="https://github.com/shamhi/PocketFiBot.git"
     ["MMProBumpBot"]="https://github.com/Alexell/MMProBumpBot.git"
     ["ClaytonBOT"]="https://github.com/doubleTroub1e/ClaytonBOT.git"
-    ["BlumBot"]="https://github.com/Alexell/BlumBot.git"
+    ["BlumTelegramBot"]="https://github.com/HiddenCodeDevs/BlumTelegramBot.git"
     ["WormSlapBot"]="https://github.com/shamhi/WormSlapBot.git"
     ["YesCoinBot"]="https://github.com/shamhi/YesCoinBot.git"
     ["HEXACOREbot"]="https://github.com/HiddenCodeDevs/HEXACOREbot.git"
+    ["DogsHouseRefBot"]="https://github.com/HiddenCodeDevs/DogsHouseRefBot.git"
 )
 
 limits=(
