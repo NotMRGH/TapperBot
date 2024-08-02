@@ -29,6 +29,7 @@ declare -A bots=(
     ["YesCoinBot"]="2"
     ["HEXACOREbot"]="1"
     ["DogsHouseRefBot"]="1"
+    ["MuskEmpireBot"]="1"
 )
 
 declare -A repos=(
@@ -48,6 +49,7 @@ declare -A repos=(
     ["YesCoinBot"]="https://github.com/shamhi/YesCoinBot.git"
     ["HEXACOREbot"]="https://github.com/HiddenCodeDevs/HEXACOREbot.git"
     ["DogsHouseRefBot"]="https://github.com/HiddenCodeDevs/DogsHouseRefBot.git"
+    ["MuskEmpireBot"]="https://github.com/Alexell/MuskEmpireBot.git"
 )
 
 limits=(
