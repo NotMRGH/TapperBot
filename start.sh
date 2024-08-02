@@ -49,7 +49,7 @@ declare -A repos=(
     ["YesCoinBot"]="https://github.com/shamhi/YesCoinBot.git"
     ["HEXACOREbot"]="https://github.com/HiddenCodeDevs/HEXACOREbot.git"
     ["DogsHouseRefBot"]="https://github.com/HiddenCodeDevs/DogsHouseRefBot.git"
-    ["MuskEmpireBot"]="https://github.com/Alexell/MuskEmpireBot.git"
+    ["MuskEmpireBot"]="https://github.com/HiddenCodeDevs/MuskEmpireBot.git"
 )
 
 limits=(
