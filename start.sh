@@ -29,7 +29,6 @@ declare -A bots=(
     ["YesCoinBot"]="2"
     ["HEXACOREbot"]="1"
     ["DogsHouseRefBot"]="1"
-    ["MuskEmpireBot"]="1"
     ["MajorBot"]="1"
     ["Tomarket"]="1"
 )
@@ -51,7 +50,6 @@ declare -A repos=(
     ["YesCoinBot"]="https://github.com/shamhi/YesCoinBot.git"
     ["HEXACOREbot"]="https://github.com/HiddenCodeDevs/HEXACOREbot.git"
     ["DogsHouseRefBot"]="https://github.com/HiddenCodeDevs/DogsHouseRefBot.git"
-    ["MuskEmpireBot"]="https://github.com/HiddenCodeDevs/MuskEmpireBot.git"
     ["MajorBot"]="https://github.com/GravelFire/MajorBot.git"
     ["Tomarket"]="clone https://github.com/GravelFire/Tomarket.git"
 )
