@@ -31,6 +31,7 @@ declare -A bots=(
     ["DogsHouseRefBot"]="1"
     ["MuskEmpireBot"]="1"
     ["MajorBot"]="1"
+    ["Tomarket"]="1"
 )
 
 declare -A repos=(
@@ -52,6 +53,7 @@ declare -A repos=(
     ["DogsHouseRefBot"]="https://github.com/HiddenCodeDevs/DogsHouseRefBot.git"
     ["MuskEmpireBot"]="https://github.com/HiddenCodeDevs/MuskEmpireBot.git"
     ["MajorBot"]="https://github.com/GravelFire/MajorBot.git"
+    ["Tomarket"]="clone https://github.com/GravelFire/Tomarket.git"
 )
 
 limits=(
