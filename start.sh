@@ -55,7 +55,7 @@ declare -A repos=(
 )
 
 limits=(
-    "CEX.IO-bot"
+    "Cexio-Tap-bot"
     "MemeFiBot"
 )
 
