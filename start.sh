@@ -24,13 +24,14 @@ declare -A bots=(
     ["PocketFiBot"]="2"
     ["MMProBumpBot"]="2"
     ["ClaytonBOT"]="2"
-    ["BlumTelegramBot"]="1"
+    ["BlumBot"]="2"
     ["WormSlapBot"]="2"
     ["YesCoinBot"]="2"
     ["HEXACOREbot"]="1"
     ["DogsHouseRefBot"]="1"
     ["MajorBot"]="1"
     ["Tomarket"]="1"
+    ["Seed-App-Mine-Seed-BOT-Telegram"]="1"
 )
 
 declare -A repos=(
@@ -45,13 +46,14 @@ declare -A repos=(
     ["PocketFiBot"]="https://github.com/shamhi/PocketFiBot.git"
     ["MMProBumpBot"]="https://github.com/Alexell/MMProBumpBot.git"
     ["ClaytonBOT"]="https://github.com/Alexell/ClaytonBOT.git"
-    ["BlumTelegramBot"]="https://github.com/HiddenCodeDevs/BlumTelegramBot.git"
+    ["BlumBot"]="https://github.com/Alexell/BlumBot.git"
     ["WormSlapBot"]="https://github.com/shamhi/WormSlapBot.git"
     ["YesCoinBot"]="https://github.com/shamhi/YesCoinBot.git"
     ["HEXACOREbot"]="https://github.com/HiddenCodeDevs/HEXACOREbot.git"
     ["DogsHouseRefBot"]="https://github.com/HiddenCodeDevs/DogsHouseRefBot.git"
     ["MajorBot"]="https://github.com/GravelFire/MajorBot.git"
-    ["Tomarket"]="clone https://github.com/GravelFire/Tomarket.git"
+    ["Tomarket"]="https://github.com/GravelFire/Tomarket.git"
+    ["Seed-App-Mine-Seed-BOT-Telegram"]="https://github.com/vanhbakaa/Seed-App-Mine-Seed-BOT-Telegram.git"
 )
 
 limits=(
