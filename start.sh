@@ -69,6 +69,14 @@ perform_operation() {
     1)
         echo -e "${green}Starting bots...${rest}"
         for bot in "${!bots[@]}"; do
+            if [ "$bot" == "HamsterKombatBot" ]; then
+                read -p "Do you want to run the HamsterKombatBot bot? (y/n): " answer
+                if [[ "$answer" != "y" ]]; then
+                    echo -e "${yellow}Skipping HamsterKombatBot bot...${rest}"
+                    continue
+                fi
+            fi
+
             cd "$bot" || {
                 echo -e "${red}${bot} not found${rest}"
                 continue
