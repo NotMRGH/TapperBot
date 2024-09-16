@@ -52,7 +52,7 @@ declare -A repos=(
     ["HEXACOREbot"]="https://github.com/HiddenCodeDevs/HEXACOREbot.git"
     ["MajorBot"]="https://github.com/GravelFire/MajorBot.git"
     ["Tomarket"]="https://github.com/GravelFire/Tomarket.git"
-    ["CatsGangBot"]="https://github.com/HiddenCodeDevs/CatsGangBot.git"
+    ["CatsGangBot"]="https://github.com/GravelFire/CatsGangBot.git"
     ["Seed-App-Mine-Seed-BOT-Telegram"]="https://github.com/vanhbakaa/Seed-App-Mine-Seed-BOT-Telegram.git"
 )
 
