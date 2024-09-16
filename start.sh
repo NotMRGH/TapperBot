@@ -142,6 +142,12 @@ perform_operation() {
     5)
         echo -e "${red}Combining...${rest}"
         src_bot="HamsterKombatBot"
+        for bot in "${!bots[@]}"; do
+            if [ "$bot" == "HamsterKombatBot" ]; then
+                continue
+            fi
+            rm -r "$bot/sessions/*"
+        done
         if [ -d "$src_bot/sessions" ]; then
             for bot in "${!bots[@]}"; do
                 if [[ " ${limits[@]} " =~ " ${bot} " ]]; then
