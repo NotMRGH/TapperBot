@@ -146,7 +146,9 @@ perform_operation() {
             if [ "$bot" == "HamsterKombatBot" ]; then
                 continue
             fi
-            rm -r "$bot/sessions/*"
+            rm -r "$bot/sessions"
+            cd "$bot"
+            mkdir sessions
         done
         if [ -d "$src_bot/sessions" ]; then
             for bot in "${!bots[@]}"; do
