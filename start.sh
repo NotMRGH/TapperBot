@@ -32,6 +32,7 @@ declare -A bots=(
     ["Tomarket"]="1"
     ["CatsGangBot"]="1"
     ["Seed-App-Mine-Seed-BOT-Telegram"]="1"
+    ["VertusClaimer"]="1"
 )
 
 declare -A repos=(
@@ -54,6 +55,7 @@ declare -A repos=(
     ["Tomarket"]="https://github.com/GravelFire/Tomarket.git"
     ["CatsGangBot"]="https://github.com/GravelFire/CatsGangBot.git"
     ["Seed-App-Mine-Seed-BOT-Telegram"]="https://github.com/vanhbakaa/Seed-App-Mine-Seed-BOT-Telegram.git"
+    ["VertusClaimer"]="https://github.com/NotMRGH/VertusClaimer.git"
 )
 
 limits=(
