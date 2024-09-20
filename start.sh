@@ -32,7 +32,7 @@ declare -A bots=(
     ["Tomarket"]="1"
     ["CatsGangBot"]="1"
     ["Seed-App-Mine-Seed-BOT-Telegram"]="1"
-    ["VertusClaimer"]="1"
+    ["VertusClaimer"]="2"
 )
 
 declare -A repos=(
