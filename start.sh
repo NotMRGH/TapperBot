@@ -13,7 +13,6 @@ rest='\033[0m'
 
 # Associative arrays for bots and repositories
 declare -A bots=(
-    ["MoonbixBot"]="1"
     ["Kaia-bot"]="1"
     ["Port3MiniAppBot"]="1"
     ["SnapsterBot"]="1"
@@ -37,7 +36,6 @@ declare -A bots=(
 )
 
 declare -A repos=(
-    ["MoonbixBot"]="https://github.com/farmingbots/MoonbixBot"
     ["Kaia-bot"]="https://github.com/vanhbakaa/Kaia-bot.git"
     ["Port3MiniAppBot"]="https://github.com/HiddenCodeDevs/Port3MiniAppBot.git"
     ["SnapsterBot"]="https://github.com/AlexKrutoy/SnapsterBot.git"
