@@ -13,7 +13,9 @@ rest='\033[0m'
 
 # Associative arrays for bots and repositories
 declare -A bots=(
-    ["PixelTapBot"]="1"
+    ["MoonbixBot"]="1"
+    ["Kaia-bot"]="1"
+    ["Port3MiniAppBot"]="1"
     ["SnapsterBot"]="1"
     ["CubesOnTheWater_Bot"]="1"
     ["DiamoreCoBot"]="1"
@@ -25,7 +27,6 @@ declare -A bots=(
     ["MMProBumpBot"]="2"
     ["ClaytonBOT"]="2"
     ["BlumTelegramBot"]="1"
-    ["WormSlapBot"]="2"
     ["YesCoinBot"]="2"
     ["HEXACOREbot"]="1"
     ["MajorBot"]="1"
@@ -36,7 +37,9 @@ declare -A bots=(
 )
 
 declare -A repos=(
-    ["PixelTapBot"]="https://github.com/AlexKrutoy/PixelTapBot.git"
+    ["MoonbixBot"]="https://github.com/farmingbots/MoonbixBot"
+    ["Kaia-bot"]="https://github.com/vanhbakaa/Kaia-bot.git"
+    ["Port3MiniAppBot"]="https://github.com/HiddenCodeDevs/Port3MiniAppBot.git"
     ["SnapsterBot"]="https://github.com/AlexKrutoy/SnapsterBot.git"
     ["CubesOnTheWater_Bot"]="https://github.com/AlexKrutoy/CubesOnTheWater_Bot.git"
     ["DiamoreCoBot"]="https://github.com/AlexKrutoy/DiamoreCoBot.git"
@@ -48,7 +51,6 @@ declare -A repos=(
     ["MMProBumpBot"]="https://github.com/Alexell/MMProBumpBot.git"
     ["ClaytonBOT"]="https://github.com/Alexell/ClaytonBOT.git"
     ["BlumTelegramBot"]="https://github.com/HiddenCodeDevs/BlumTelegramBot.git"
-    ["WormSlapBot"]="https://github.com/shamhi/WormSlapBot.git"
     ["YesCoinBot"]="https://github.com/shamhi/YesCoinBot.git"
     ["HEXACOREbot"]="https://github.com/HiddenCodeDevs/HEXACOREbot.git"
     ["MajorBot"]="https://github.com/GravelFire/MajorBot.git"
