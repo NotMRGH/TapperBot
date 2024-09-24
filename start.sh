@@ -33,6 +33,9 @@ declare -A bots=(
     ["CatsGangBot"]="1"
     ["Seed-App-Mine-Seed-BOT-Telegram"]="1"
     ["VertusClaimer"]="2"
+    ["CatsvsDogs"]="1"
+    ["CatsvsDogs"]="1"
+    ["notpixel"]="1"
 )
 
 declare -A repos=(
@@ -56,6 +59,8 @@ declare -A repos=(
     ["CatsGangBot"]="https://github.com/GravelFire/CatsGangBot.git"
     ["Seed-App-Mine-Seed-BOT-Telegram"]="https://github.com/vanhbakaa/Seed-App-Mine-Seed-BOT-Telegram.git"
     ["VertusClaimer"]="https://github.com/NotMRGH/VertusClaimer.git"
+    ["CatsvsDogs"]="https://github.com/vadymfedorets/CatsvsDogs.git"
+    ["notpixel"]="https://github.com/vadymfedorets/notpixel.git"
 )
 
 limits=(
