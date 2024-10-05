@@ -36,6 +36,7 @@ declare -A bots=(
     ["CatsvsDogs"]="1"
     ["CatsvsDogs"]="1"
     ["notpixel"]="1"
+    ["boinkers"]="1"
 )
 
 declare -A repos=(
@@ -61,6 +62,7 @@ declare -A repos=(
     ["VertusClaimer"]="https://github.com/NotMRGH/VertusClaimer.git"
     ["CatsvsDogs"]="https://github.com/vadymfedorets/CatsvsDogs.git"
     ["notpixel"]="https://github.com/vadymfedorets/notpixel.git"
+    ["boinkers"]="https://github.com/YarmolenkoD/boinkers.git"
 )
 
 limits=(
